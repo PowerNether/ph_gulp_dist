@@ -1,279 +1,416 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/selectric.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-    <header class="header">
-        <div class="header-wrapper"><a class="header-logo" href="/">
-                <picture>
-                    <source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Пентхаусы Москвы">
-                </picture>
-            </a>
-            <div class="header-search"><span class="header-search-icon"></span></div>
-            <div class="header-menu"><a class="header-link" href="#">Купить<span class="header-amount">457</span></a><a class="header-link" href="#">Продать</a><a class="header-link" href="./catalog">Виды</a><a class="header-link" href="#">На карте</a><a class="header-link" href="#">Контакты</a></div><a class="header-phone" href="tel:+749515032XX">+7 495 150-32-XX</a><button class="header-btn">Заказать звонок<span class="header-btn-icon"></span></button>
-            <div class="header-toggle"><span class="header-toggle-icon"></span></div>
+  <body class="front">
+    <div class="main">
+      <div class="main-left">
+        <div class="main-left-logo">
+          <picture>
+            <source srcset="./img/logo.webp" type="image/webp" />
+            <img src="./img/logo.png" alt="" />
+          </picture>
         </div>
-    </header>
-    <div class="header-overlay"></div>
+        <h1 class="main-left-title">Поможем найти квартиру с террасой в Москве</h1>
+        <p class="main-left-text">Специалист уточнит запрос детальнее, <span>без комиссии </span>подберёт и отправит презентации на WhatsApp. Без спама</p>
+        <form class="main-left-form">
+          <div class="main-left-inputs">
+            <div class="select-field type">
+              <span class="amount">1</span
+              ><select class="select" multiple="multiple">
+                <option class="placeholder" value="placeholder" disabled>Тип объекта</option>
+                <option value="KV">Квартира</option>
+                <option value="PH">Пентхаус</option>
+                <option value="TH">Таунхаус</option>
+              </select>
+            </div>
+            <div class="main-left-field whatsapp">
+              <div class="main-left-input"><input id="whatsapp" name="whatsapp" type="tel" placeholder="Номер WhatsApp" required /><label for="whatsapp">Номер WhatsApp</label></div>
+            </div>
+            <div class="select-field price">
+              <select class="select">
+                <option class="placeholder" value="placeholder" disabled selected>Цена от</option>
+                <option value="KV">Квартира</option>
+                <option value="PH">Пентхаус</option>
+                <option value="TH">Таунхаус</option></select
+              ><select class="select">
+                <option class="placeholder" value="placeholder" disabled selected>Цена до</option>
+                <option value="KV">Квартира</option>
+                <option value="PH">Пентхаус</option>
+                <option value="TH">Таунхаус</option>
+              </select>
+            </div>
+          </div>
+          <button class="main-left-btn">Подобрать варианты</button>
+        </form>
+      </div>
+      <div class="main-right">
+        <a class="main-right-block main-right-block__slider swiper" href="">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./img/top10_1.webp" type="image/webp" />
+                <img src="./img/top10_1.png" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./img/top10_2.webp" type="image/webp" />
+                <img src="./img/top10_2.png" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./img/top10_3.webp" type="image/webp" />
+                <img src="./img/top10_3.png" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./img/top10_1.webp" type="image/webp" />
+                <img src="./img/top10_1.png" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./img/top10_2.webp" type="image/webp" />
+                <img src="./img/top10_2.png" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./img/top10_3.webp" type="image/webp" />
+                <img src="./img/top10_3.png" alt="" />
+              </picture>
+            </div>
+          </div>
+          <div class="main-right-overlay">
+            <p class="main-right-title">Выбрать пентхаус самостоятельно</p>
+            <p class="main-right-link">577 варинатов на карте</p>
+            <div class="swiper-pagination main-right-pagination"></div>
+          </div> </a
+        ><a class="main-right-block main-right-block__image" href=""> <p class="main-right-title">Топ-10 самых актуальных предложений</p> </a
+        ><a class="main-right-block main-right-block__color" href="">
+          <p class="main-right-title">Выбрать пентхаус самостоятельно</p>
+          <p class="main-right-link">577 варинатов на карте</p>
+        </a>
+      </div>
+    </div>
     <div class="intro">
-        <div class="wrapper">
-            <div class="intro-content">
-                <h2 class="intro-title"> В нашей базе пентхаусов <span>577 объектов</span></h2>
-                <h3 class="intro-subtitle">Пентхаусы Москвы — <span class="bold">каталог №1 </span>для поиска <span>пентхаусов</span>, <span>таунхаусов </span>, <span>квартир с террасами </span>и <span>мансард</span></h3>
-                <p class="intro-desc">Каталог объединяет предложения пентхаусов от собственников и агентств недвижимости в Москве.<br> <br> Если <span>Вы нацелены на покупку пентхауса или мансарды </span>, то эксперты нашего агентства всегда готовы оказать Вам полный спектр услуг по покупке элитной недвижимости, начиная от подбора пентхауса и заканчивая переговорами и полным юридическим сопровождением сделки.</p>
-            </div>
-            <div class="intro-comment">
-                <p class="intro-text">Ставим перед собой амбициозную цель — выделить сегмент пентхаусов из общего рынка элитной недвижимости, популяризировать культуру жизнив пентхаусе, а также разработать справедливые правила и критерии для оценки стоимости и качества пентхаусов на московском рынке элитной недвижимости</p>
-                <div class="intro-broker">
-                    <div class="intro-avatar">
-                        <picture>
-                            <source srcset="./img/author.webp" type="image/webp"><img src="./img/author.png" alt="">
-                        </picture>
-                    </div>
-                    <div class="intro-info">
-                        <p class="intro-name">Андрей Кальницкий</p>
-                        <p class="intro-position">Ведущий брокер</p>
-                    </div>
-                </div>
-            </div>
+      <header class="header">
+        <div class="header-wrapper">
+          <a class="header-logo" href="./">
+            <picture>
+              <source srcset="./img/logo.webp" type="image/webp" />
+              <img src="./img/logo.png" alt="" />
+            </picture>
+          </a>
+          <div class="header-search"><span class="header-search-icon"></span></div>
+          <div class="header-menu">
+            <a class="header-link" href="#">Купить<span class="header-amount">457</span></a
+            ><a class="header-link" href="#">Продать</a><a class="header-link" href="./catalog.html">Виды</a><a class="header-link" href="#">На карте</a><a class="header-link" href="#">Контакты</a>
+          </div>
+          <a class="header-phone" href="tel:+749515032XX">+7 495 150-32-XX</a><button class="header-btn">Заказать звонок<span class="header-btn-icon"></span></button>
+          <div class="header-toggle"><span class="header-toggle-icon"></span></div>
         </div>
+      </header>
+      <div class="wrapper">
+        <div class="intro-content">
+          <h2 class="intro-title">В нашей базе пентхаусов <span>577 объектов</span></h2>
+          <h3 class="intro-subtitle">Пентхаусы Москвы — <span class="bold">каталог №1 </span>для поиска <span>пентхаусов</span>, <span>таунхаусов </span>, <span>квартир с террасами </span>и <span>мансард</span></h3>
+          <p class="intro-desc">
+            Каталог объединяет предложения пентхаусов от собственников и агентств недвижимости в Москве.<br />
+            <br />
+            Если <span>Вы нацелены на покупку пентхауса или мансарды </span>, то эксперты нашего агентства всегда готовы оказать Вам полный спектр услуг по покупке элитной недвижимости, начиная от подбора пентхауса и заканчивая переговорами и полным юридическим сопровождением сделки.
+          </p>
+        </div>
+        <div class="intro-comment">
+          <p class="intro-text">Ставим перед собой амбициозную цель — выделить сегмент пентхаусов из общего рынка элитной недвижимости, популяризировать культуру жизнив пентхаусе, а также разработать справедливые правила и критерии для оценки стоимости и качества пентхаусов на московском рынке элитной недвижимости</p>
+          <div class="intro-broker">
+            <div class="intro-avatar">
+              <picture>
+                <source srcset="./img/author.webp" type="image/webp" />
+                <img src="./img/author.png" alt="" />
+              </picture>
+            </div>
+            <div class="intro-info">
+              <p class="intro-name">Андрей Кальницкий</p>
+              <p class="intro-position">Ведущий брокер</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="top10">
-        <div class="wrapper">
-            <h2 class="top10-title">Топ-10 лучших видов</h2>
-            <p class="top10-text">Сотрудничество с ведущими мировыми и российскими архитектурными бюро позволяет выделить проекты холдинга на карте города.</p>
-            <div class="top10-slider swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="top10-img"><img src="./img/top10_1.png" alt="1">
-                            <div class="top10-overlay">
-                                <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
-                                <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="top10-img"><img src="./img/top10_2.png" alt="1">
-                            <div class="top10-overlay">
-                                <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
-                                <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="top10-img"><img src="./img/top10_3.png" alt="1">
-                            <div class="top10-overlay">
-                                <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
-                                <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="top10-img"><img src="./img/top10_1.png" alt="1">
-                            <div class="top10-overlay">
-                                <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
-                                <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="top10-img"><img src="./img/top10_2.png" alt="1">
-                            <div class="top10-overlay">
-                                <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
-                                <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="top10-img"><img src="./img/top10_3.png" alt="1">
-                            <div class="top10-overlay">
-                                <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
-                                <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="wrapper">
+        <h2 class="top10-title">Топ-10 лучших видов</h2>
+        <p class="top10-text">Сотрудничество с ведущими мировыми и российскими архитектурными бюро позволяет выделить проекты холдинга на карте города.</p>
+        <div class="top10-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="top10-img">
+                <img src="./img/top10_1.png" alt="1" />
+                <div class="top10-overlay">
+                  <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
+                  <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
                 </div>
+              </div>
             </div>
-            <div class="top10-navigation">
-                <div class="top10-controll"><span class="top10-left"></span>
-                    <div class="top10-count"><span class="top10-current">1</span>&nbsp;/&nbsp; <span class="top10-all">10</span></div><span class="top10-right"></span>
+            <div class="swiper-slide">
+              <div class="top10-img">
+                <img src="./img/top10_2.png" alt="1" />
+                <div class="top10-overlay">
+                  <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
+                  <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
                 </div>
-                <div class="swiper-scrollbar top10-scrollbar"></div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="top10-img">
+                <img src="./img/top10_3.png" alt="1" />
+                <div class="top10-overlay">
+                  <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
+                  <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="top10-img">
+                <img src="./img/top10_1.png" alt="1" />
+                <div class="top10-overlay">
+                  <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
+                  <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="top10-img">
+                <img src="./img/top10_2.png" alt="1" />
+                <div class="top10-overlay">
+                  <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
+                  <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="top10-img">
+                <img src="./img/top10_3.png" alt="1" />
+                <div class="top10-overlay">
+                  <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
+                  <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="top10-navigation">
+          <div class="top10-controll">
+            <span class="top10-left"></span>
+            <div class="top10-count"><span class="top10-current">1</span>&nbsp;/&nbsp; <span class="top10-all">10</span></div>
+            <span class="top10-right"></span>
+          </div>
+          <div class="swiper-scrollbar top10-scrollbar"></div>
+        </div>
+      </div>
     </div>
     <div class="actual">
-        <div class="wrapper">
-            <h2 class="actual-title">Самые актуальные предложения</h2>
-            <div class="teaser">
-                <div class="teaser-img"><img src="./img/teaser1.png" alt="1"></div>
-                <div class="teaser-content"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
-                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
-                    <div class="teaser-tags">
-                        <p class="teaser-tag">Многоуровневая квартира</p>
-                    </div>
-                </div>
-                <div class="teaser-price">
-                    <div class="teaser-rub">514 560 000 ₽</div>
-                    <div class="teaser-dol">7 000 000 $</div>
-                </div>
+      <div class="wrapper">
+        <h2 class="actual-title">Самые актуальные предложения</h2>
+        <div class="teaser">
+          <div class="teaser-img"><img src="./img/teaser1.png" alt="1" /></div>
+          <div class="teaser-content">
+            <a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+            <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+            <div class="teaser-tags">
+              <p class="teaser-tag">Многоуровневая квартира</p>
             </div>
-            <div class="teaser">
-                <div class="teaser-img"><img src="./img/teaser2.png" alt="2"></div>
-                <div class="teaser-content"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
-                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
-                    <div class="teaser-tags">
-                        <p class="teaser-tag">Многоуровневая квартира</p>
-                    </div>
-                </div>
-                <div class="teaser-price teaser-price__sale">
-                    <div class="teaser-rub">7 644 632 000 ₽</div>
-                    <div class="teaser-old">9 210 400 000 ₽</div>
-                    <div class="teaser-dol">7 000 000 $</div>
-                    <div class="teaser-percent">Скидка 17%</div>
-                </div>
-            </div>
-            <div class="teaser">
-                <div class="teaser-img"><img src="./img/teaser3.png" alt="3"></div>
-                <div class="teaser-content"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
-                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
-                    <div class="teaser-tags">
-                        <p class="teaser-tag">Многоуровневая квартира</p>
-                        <p class="teaser-tag">Многоуровневая квартира</p>
-                    </div>
-                </div>
-                <div class="teaser-price">
-                    <div class="teaser-rub">514 560 000 ₽</div>
-                    <div class="teaser-dol">7 000 000 $</div>
-                </div>
-            </div>
-            <div class="teaser">
-                <div class="teaser-img"><img src="./img/teaser4.png" alt="4"></div>
-                <div class="teaser-content"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
-                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
-                    <div class="teaser-tags">
-                        <p class="teaser-tag">Многоуровневая квартира</p>
-                    </div>
-                </div>
-                <div class="teaser-price">
-                    <div class="teaser-rub">1 316 340 000 ₽</div>
-                    <div class="teaser-dol">18 000 000 $</div>
-                </div>
-            </div>
-            <div class="teaser">
-                <div class="teaser-img"><img src="./img/teaser5.png" alt="5"></div>
-                <div class="teaser-content"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
-                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
-                    <div class="teaser-tags">
-                        <p class="teaser-tag">Многоуровневая квартира</p>
-                    </div>
-                </div>
-                <div class="teaser-price teaser-price__request"><button class="teaser-request">Цена по запросу</button></div>
-            </div><button class="actual-more"> Смотреть все пентхаусы в каталоге</button>
+          </div>
+          <div class="teaser-price">
+            <div class="teaser-rub">514 560 000 ₽</div>
+            <div class="teaser-dol">7 000 000 $</div>
+          </div>
         </div>
+        <div class="teaser">
+          <div class="teaser-img"><img src="./img/teaser2.png" alt="2" /></div>
+          <div class="teaser-content">
+            <a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+            <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+            <div class="teaser-tags">
+              <p class="teaser-tag">Многоуровневая квартира</p>
+            </div>
+          </div>
+          <div class="teaser-price teaser-price__sale">
+            <div class="teaser-rub">7 644 632 000 ₽</div>
+            <div class="teaser-old">9 210 400 000 ₽</div>
+            <div class="teaser-dol">7 000 000 $</div>
+            <div class="teaser-percent">Скидка 17%</div>
+          </div>
+        </div>
+        <div class="teaser">
+          <div class="teaser-img"><img src="./img/teaser3.png" alt="3" /></div>
+          <div class="teaser-content">
+            <a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+            <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+            <div class="teaser-tags">
+              <p class="teaser-tag">Многоуровневая квартира</p>
+              <p class="teaser-tag">Многоуровневая квартира</p>
+            </div>
+          </div>
+          <div class="teaser-price">
+            <div class="teaser-rub">514 560 000 ₽</div>
+            <div class="teaser-dol">7 000 000 $</div>
+          </div>
+        </div>
+        <div class="teaser">
+          <div class="teaser-img"><img src="./img/teaser4.png" alt="4" /></div>
+          <div class="teaser-content">
+            <a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+            <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+            <div class="teaser-tags">
+              <p class="teaser-tag">Многоуровневая квартира</p>
+            </div>
+          </div>
+          <div class="teaser-price">
+            <div class="teaser-rub">1 316 340 000 ₽</div>
+            <div class="teaser-dol">18 000 000 $</div>
+          </div>
+        </div>
+        <div class="teaser">
+          <div class="teaser-img"><img src="./img/teaser5.png" alt="5" /></div>
+          <div class="teaser-content">
+            <a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+            <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+            <div class="teaser-tags">
+              <p class="teaser-tag">Многоуровневая квартира</p>
+            </div>
+          </div>
+          <div class="teaser-price teaser-price__request"><button class="teaser-request">Цена по запросу</button></div>
+        </div>
+        <button class="actual-more">Смотреть все пентхаусы в каталоге</button>
+      </div>
     </div>
     <div class="faq">
-        <div class="wrapper">
-            <h2 class="faq-title">Часто задаваемые вопросы</h2>
-            <div class="faq-answer">
-                <h2 class="faq-answer-title">Цель проекта «Пентхаусы Москвы»<span class="faq-answer-icon"></span></h2>
-                <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
-            </div>
-            <div class="faq-answer">
-                <h2 class="faq-answer-title">Как посмотреть понравившийся объект<span class="faq-answer-icon"></span></h2>
-                <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
-            </div>
-            <div class="faq-answer">
-                <h2 class="faq-answer-title">Почему продавать пентхаус с нами выгодно<span class="faq-answer-icon"></span></h2>
-                <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
-            </div>
-            <div class="faq-answer">
-                <h2 class="faq-answer-title">Как рассчитывается стоимость террасы<span class="faq-answer-icon"></span></h2>
-                <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
-            </div>
-            <div class="faq-answer">
-                <h2 class="faq-answer-title">Двухуровневые квартиры: почему их выбирают<span class="faq-answer-icon"></span></h2>
-                <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
-            </div>
+      <div class="wrapper">
+        <h2 class="faq-title">Часто задаваемые вопросы</h2>
+        <div class="faq-answer">
+          <h2 class="faq-answer-title">Цель проекта «Пентхаусы Москвы»<span class="faq-answer-icon"></span></h2>
+          <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
         </div>
+        <div class="faq-answer">
+          <h2 class="faq-answer-title">Как посмотреть понравившийся объект<span class="faq-answer-icon"></span></h2>
+          <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
+        </div>
+        <div class="faq-answer">
+          <h2 class="faq-answer-title">Почему продавать пентхаус с нами выгодно<span class="faq-answer-icon"></span></h2>
+          <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
+        </div>
+        <div class="faq-answer">
+          <h2 class="faq-answer-title">Как рассчитывается стоимость террасы<span class="faq-answer-icon"></span></h2>
+          <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
+        </div>
+        <div class="faq-answer">
+          <h2 class="faq-answer-title">Двухуровневые квартиры: почему их выбирают<span class="faq-answer-icon"></span></h2>
+          <div class="faq-answer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, et.</div>
+        </div>
+      </div>
     </div>
     <div class="formIndex">
-        <div class="wrapper">
-            <div class="formIndex-content">
-                <h2 class="formIndex-title">Остались вопросы?</h2>
-                <p class="formIndex-text">Если у вас остались вопросы, закажите обратный звонок.<br> Мы перезвоним и расскажем всё, что интересно или непонятно.<br><br> Если захотите приехать, запишем на показ.<br><br> Или позвоните нам сами:<br> <a class="formIndex-link" href="tel:+74951503227">+7 495 150-32-27</a></p>
-            </div>
-            <form class="formIndex-form">
-                <div class="formIndex-field">
-                    <div class="formIndex-input"><input id="name" name="name" type="text" placeholder="Ваше имя" required><label for="name">Ваше имя</label></div>
-                </div>
-                <div class="formIndex-field">
-                    <div class="formIndex-input"><input id="phone" name="phone" type="tel" placeholder="Номер телефона" required><label for="phone">Номер телефона</label></div>
-                </div><button class="formIndex-btn">Заказать обратный звонок<span class="formIndex-btn-icon"></span></button>
-            </form>
+      <div class="wrapper">
+        <div class="formIndex-content">
+          <h2 class="formIndex-title">Остались вопросы?</h2>
+          <p class="formIndex-text">
+            Если у вас остались вопросы, закажите обратный звонок.<br />
+            Мы перезвоним и расскажем всё, что интересно или непонятно.<br /><br />
+            Если захотите приехать, запишем на показ.<br /><br />
+            Или позвоните нам сами:<br />
+            <a class="formIndex-link" href="tel:+74951503227">+7 495 150-32-27</a>
+          </p>
         </div>
+        <form class="formIndex-form">
+          <div class="formIndex-field">
+            <div class="formIndex-input"><input id="name" name="name" type="text" placeholder="Ваше имя" required /><label for="name">Ваше имя</label></div>
+          </div>
+          <div class="formIndex-field">
+            <div class="formIndex-input"><input id="phone" name="phone" type="tel" placeholder="Номер телефона" required /><label for="phone">Номер телефона</label></div>
+          </div>
+          <button class="formIndex-btn">Заказать обратный звонок<span class="formIndex-btn-icon"></span></button>
+        </form>
+      </div>
     </div>
     <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-wrapper">
-                <div class="footer-contact">
-                    <div class="footer-contact-logo">
-                        <picture>
-                            <source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="Пентхаусы Москвы">
-                        </picture>
-                    </div>
-                    <div class="footer-contact-links"><a class="footer-contact-link footer-contact-phone" href="tel:+749515032ХХ">+7 495 150-32-ХХ</a><a class="footer-contact-link footer-contact-mail" href="mailto:info@mospenthouse.ru">info@mospenthouse.ru</a></div>
-                    <div class="footer-contact-text">Ответим на любые вопросы, связанные с куплей-продажей пентхаусов и квартир с открытыми террасами в Москве. Информация на сайте, в т.ч. стоимость пентхаусов, носит информационный характер и не является публичной офертой.</div>
-                </div>
-                <div class="footer-menu"><a class="footer-menu-link" href="/">На главную</a><a class="footer-menu-link" href="./catalog">Каталог</a><a class="footer-menu-link" href="#">Наши услуги</a><a class="footer-menu-link" href="#">Продать пентхаус</a><a class="footer-menu-link" href="#">Статьи</a><a class="footer-menu-link" href="#">Контакты</a></div>
-                <div class="footer-services"><a class="footer-service" href="#">
-                        <p class="footer-service-title">Продажа пентхауса</p>
-                        <p class="footer-service-text">Предлагаем 3 схемы сотрудничества для собственников<span>: стандартная, с рекламным продвижением и эксклюзивная с работой с агентствами</span></p>
-                    </a><a class="footer-service" href="#">
-                        <p class="footer-service-title">Поиск элитной недвижимости</p>
-                        <p class="footer-service-text">Комиссия для покупателей — 0%! <span>Персональный подход к реализации задач клиента, опыт проведения сложных сделок и соблюдение конфиденциальности.</span></p>
-                    </a><a class="footer-service" href="#">
-                        <p class="footer-service-title">Правовое сопровождение сделок</p>
-                        <p class="footer-service-text">Проверим историю объекта недвижимости и юридическую чистоту сделки<span>, поможем составить договор купли-продажи и поможем снизить налогообложение при продаже</span></p>
-                    </a></div>
-                <div class="footer-news"><a class="footer-new" href="#">
-                        <div class="footer-new-img"><img src="./img/new1.png" alt="1"></div>
-                        <p class="footer-new-title">«Резиденция Тверская» — роскошные пентхаусы в центре старой Москвы</p>
-                    </a><a class="footer-new" href="#">
-                        <div class="footer-new-img"><img src="./img/new2.png" alt="2"></div>
-                        <p class="footer-new-title">Самые дорогие пентхаусы столицы</p>
-                    </a><a class="footer-new" href="#">
-                        <div class="footer-new-img"><img src="./img/new3.png" alt="3"></div>
-                        <p class="footer-new-title">В Нью-Йорке продается единственный пентхаус от Захи Хадид</p>
-                    </a><a class="footer-new" href="#">
-                        <div class="footer-new-img"><img src="./img/new4.png" alt="4"></div>
-                        <p class="footer-new-title">Невероятный пентхаус «День-и-ночь» в Лондоне</p>
-                    </a></div>
+      <div class="footer-top">
+        <div class="footer-wrapper">
+          <div class="footer-contact">
+            <div class="footer-contact-logo">
+              <picture>
+                <source srcset="./img/logo-white.webp" type="image/webp" />
+                <img src="./img/logo-white.png" alt="Пентхаусы Москвы" />
+              </picture>
             </div>
+            <div class="footer-contact-links"><a class="footer-contact-link footer-contact-phone" href="tel:+749515032ХХ">+7 495 150-32-ХХ</a><a class="footer-contact-link footer-contact-mail" href="mailto:info@mospenthouse.ru">info@mospenthouse.ru</a></div>
+            <div class="footer-contact-text">Ответим на любые вопросы, связанные с куплей-продажей пентхаусов и квартир с открытыми террасами в Москве. Информация на сайте, в т.ч. стоимость пентхаусов, носит информационный характер и не является публичной офертой.</div>
+          </div>
+          <div class="footer-menu"><a class="footer-menu-link" href="./">На главную</a><a class="footer-menu-link" href="./catalog.html">Каталог</a><a class="footer-menu-link" href="#">Наши услуги</a><a class="footer-menu-link" href="#">Продать пентхаус</a><a class="footer-menu-link" href="#">Статьи</a><a class="footer-menu-link" href="#">Контакты</a></div>
+          <div class="footer-services">
+            <a class="footer-service" href="#">
+              <p class="footer-service-title">Продажа пентхауса</p>
+              <p class="footer-service-text">Предлагаем 3 схемы сотрудничества для собственников<span>: стандартная, с рекламным продвижением и эксклюзивная с работой с агентствами</span></p> </a
+            ><a class="footer-service" href="#">
+              <p class="footer-service-title">Поиск элитной недвижимости</p>
+              <p class="footer-service-text">Комиссия для покупателей — 0%! <span>Персональный подход к реализации задач клиента, опыт проведения сложных сделок и соблюдение конфиденциальности.</span></p> </a
+            ><a class="footer-service" href="#">
+              <p class="footer-service-title">Правовое сопровождение сделок</p>
+              <p class="footer-service-text">Проверим историю объекта недвижимости и юридическую чистоту сделки<span>, поможем составить договор купли-продажи и поможем снизить налогообложение при продаже</span></p>
+            </a>
+          </div>
+          <div class="footer-news">
+            <a class="footer-new" href="#">
+              <div class="footer-new-img"><img src="./img/new1.png" alt="1" /></div>
+              <p class="footer-new-title">«Резиденция Тверская» — роскошные пентхаусы в центре старой Москвы</p> </a
+            ><a class="footer-new" href="#">
+              <div class="footer-new-img"><img src="./img/new2.png" alt="2" /></div>
+              <p class="footer-new-title">Самые дорогие пентхаусы столицы</p> </a
+            ><a class="footer-new" href="#">
+              <div class="footer-new-img"><img src="./img/new3.png" alt="3" /></div>
+              <p class="footer-new-title">В Нью-Йорке продается единственный пентхаус от Захи Хадид</p> </a
+            ><a class="footer-new" href="#">
+              <div class="footer-new-img"><img src="./img/new4.png" alt="4" /></div>
+              <p class="footer-new-title">Невероятный пентхаус «День-и-ночь» в Лондоне</p>
+            </a>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <div class="footer-wrapper">
-                <div class="footer-info">
-                    <div class="footer-company">
-                        <div class="footer-company-name">ООО "Интернет недвижимость" </div>
-                        <div class="footer-company-address">127287, г. Москва, улица Башиловская, дом 28, стр. 9, пом. 1, ком. 15</div>
-                        <div class="footer-company-legal">ИНН 7714384732 / КПП 771401001 / ОГРН 1167746384310</div>
-                    </div>
-                    <div class="footer-socials"><a class="footer-social" href="#" target="_blank"> <span class="footer-social-icon footer-social-icon__youtube"></span><span class="footer-social-title">Youtube</span></a><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__facebook"></span><span class="footer-social-title">Facebook</span></a><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__instagram"></span><span class="footer-social-title">Instargam</span></a><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__twitter"></span><span class="footer-social-title">Twitter</span></a></div>
-                </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-wrapper">
+          <div class="footer-info">
+            <div class="footer-company">
+              <div class="footer-company-name">ООО "Интернет недвижимость"</div>
+              <div class="footer-company-address">127287, г. Москва, улица Башиловская, дом 28, стр. 9, пом. 1, ком. 15</div>
+              <div class="footer-company-legal">ИНН 7714384732 / КПП 771401001 / ОГРН 1167746384310</div>
             </div>
+            <div class="footer-socials">
+              <a class="footer-social" href="#" target="_blank"> <span class="footer-social-icon footer-social-icon__youtube"></span><span class="footer-social-title">Youtube</span></a
+              ><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__facebook"></span><span class="footer-social-title">Facebook</span></a
+              ><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__instagram"></span><span class="footer-social-title">Instargam</span></a
+              ><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__twitter"></span><span class="footer-social-title">Twitter</span></a>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
+    <div class="header-overlay"></div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.selectric.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"> </script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
