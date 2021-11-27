@@ -4730,6 +4730,12 @@ body .header.fixed {
     padding: 32px 0;
   }
 
+  .teaser__big .teaser-slider {
+    width: 100%;
+    height: auto;
+    margin: 0 0 16px;
+  }
+
   .teaser {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
