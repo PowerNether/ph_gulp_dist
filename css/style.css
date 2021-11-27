@@ -439,9 +439,9 @@ body {
   height: 100%;
   padding: 48px;
   z-index: 1;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(35, 35, 35, 0.5)), to(rgba(35, 35, 35, 0.5)));
-  background: -o-linear-gradient(bottom, rgba(35, 35, 35, 0.5), rgba(35, 35, 35, 0.5));
-  background: linear-gradient(0deg, rgba(35, 35, 35, 0.5), rgba(35, 35, 35, 0.5));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(35, 35, 35, 0.5)), to(rgba(35, 35, 35, 0.5))), url(.png);
+  background: -o-linear-gradient(bottom, rgba(35, 35, 35, 0.5), rgba(35, 35, 35, 0.5)), url(.png);
+  background: linear-gradient(0deg, rgba(35, 35, 35, 0.5), rgba(35, 35, 35, 0.5)), url(.png);
 }
 
 .main-right-title {
