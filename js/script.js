@@ -159,3 +159,64 @@ $("#whatsapp").mask("+7(999) 999-9999", {
 $('#phone').mask("+7(999) 999-9999", {
     autoclear: false
 });
+
+$('.jk-desc-link').on('click', function (e) {
+    e.preventDefault();
+    let href = $(this).attr('href')
+    let id = href.slice(1, href.length)
+    let scroll_postition = $('.jk-desc').find(`#${id}`).offset().top - $('header').outerHeight()
+    $('html, body').stop().animate({
+        scrollTop: scroll_postition
+    }, 1000)
+})
+
+$(window).on('scroll', function () {
+    let blocks = $('.block')
+    let scroll_postion = $(this).scrollTop();
+  
+    blocks.each(function() {
+        let top = $(this).offset().top - $('header').outerHeight() - 40;
+        let bottom = top + $(this).outerHeight();
+        
+        if (scroll_postion >= top && scroll_postion <= bottom) {
+            $('.jk-desc-link').removeClass('active');
+
+            $('.jk-desc').find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+        }
+    });
+});
+
+let teaserSliders = document.querySelectorAll('.teaser-slider') || null
+
+window.addEventListener('load', function() {
+    if (teaserSliders !== null) {
+        Array.from(teaserSliders).forEach((el) => {
+            new Swiper(el, {
+                grab: true,
+                grabCursor: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            })
+        })
+    }
+})
+
+let lotSlider = document.querySelector('.lot-slider') || null
+
+window.addEventListener('load', function () {
+    if (lotSlider !== null) {
+        new Swiper(lotSlider, {
+            grab: true,
+            grabCursor: true,
+            spaceBetween: 8,
+            slidesPerView: 1.3,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+        })
+    }
+})
