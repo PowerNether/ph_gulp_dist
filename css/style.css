@@ -2557,6 +2557,11 @@ body .header.fixed {
   height: 100%;
   padding: 16px;
   z-index: 3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .teaser-overlay-tag {
