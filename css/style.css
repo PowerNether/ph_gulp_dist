@@ -6179,6 +6179,9 @@ body .header.fixed {
   .footer-bottom {
     padding: 0 0 40px;
   }
+  .teaser__desc .teaser-slider {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 668px) {
