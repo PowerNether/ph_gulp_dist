@@ -220,3 +220,59 @@ window.addEventListener('load', function () {
         })
     }
 })
+
+let filterToggler = document.querySelector('.filter-control-toggler') || null
+
+if (filterToggler !== null) {
+    filterToggler.addEventListener('click', function () {
+        let filter = document.querySelector('.filter')
+        if (filter.classList.contains('open')) {
+            filter.classList.remove('open')
+        } else {
+            filter.classList.add('open')
+        }
+    })
+}
+
+let filterOpener = document.querySelector('.filter-mobile-toggler') || null
+let filterCloser = document.querySelector('.filter-header-toggler') || null
+
+if (filterOpener !== null) {
+    filterOpener.addEventListener('click', function () {
+        let filter = document.querySelector('.filter')
+        if (filter.classList.contains('opened')) {
+            filter.classList.remove('opened')
+            document.body.classList.remove('body-overflow')
+        } else {
+            filter.classList.add('opened')
+            document.body.classList.add('body-overflow')
+        }
+    })
+}
+if (filterCloser !== null) {
+    filterCloser.addEventListener('click', function () {
+        let filter = document.querySelector('.filter')
+        if (filter.classList.contains('opened')) {
+            filter.classList.remove('opened')
+            document.body.classList.remove('body-overflow')
+        } else {
+            filter.classList.add('opened')
+            document.body.classList.add('body-overflow')
+        }
+    })
+}
+
+let listingCompilation = document.querySelectorAll('.listing-compilation-header') || null
+
+if (listingCompilation !== null) {
+    Array.from(listingCompilation).forEach(el => {
+        el.addEventListener('click', function () {
+            let parent = el.parentNode
+            if (parent.classList.contains('open')) {
+                parent.classList.remove('open')
+            } else {
+                parent.classList.add('open')
+            }
+        })
+    })
+}

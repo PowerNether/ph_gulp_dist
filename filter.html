@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/selectric.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="listingPage">
+    <header class="header">
+        <div class="header-wrapper"><a class="header-logo" href="./">
+                <picture>
+                    <source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Пентхаусы Москвы">
+                </picture>
+            </a>
+            <div class="header-search"><span class="header-search-icon"></span></div>
+            <div class="header-menu"><a class="header-link" href="#">Купить<span class="header-amount">457</span></a><a class="header-link" href="#">Продать</a><a class="header-link" href="/catalog.html">Виды</a><a class="header-link" href="#">На карте</a><a class="header-link" href="#">Контакты</a></div><a class="header-phone" href="tel:+749515032XX">+7 495 150-32-XX</a><button class="header-btn">Заказать звонок<span class="header-btn-icon"></span></button>
+            <div class="header-toggle"><span class="header-toggle-icon"></span></div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">Главная</li><span class="breadcrumbs-icon"></span>
+            <li class="breadcrumbs-item">Каталог видов Москвы</li>
+        </ul>
+    </div>
+    <div class="listing">
+        <div class="filter-mobile">
+            <div class="filter-mobile-toggler"><span class="icon"></span>Фильтр</div>
+            <div class="filter-mobile-map"><span class="icon"></span>Карта</div>
+        </div>
+        <div class="wrapper">
+            <h1 class="listing-title">Купить пентхаус</h1>
+            <div class="filter">
+                <div class="filter-header">
+                    <div class="filter-header-toggler"></div>
+                    <div class="filter-header-title">Фильтры</div>
+                    <div class="filter-header-reset">Сбросить</div>
+                </div>
+                <div class="filter-body">
+                    <div class="filter-row">
+                        <div class="checkBlock-field typepc"><label class="checkBlock"><input type="checkbox"><span>Пентхаус</span></label><label class="checkBlock"><input type="checkbox"><span>Видовая кв-ра</span></label><label class="checkBlock"><input type="checkbox"><span>Таунхаус</span></label><label class="checkBlock"><input type="checkbox"><span>Мансарда</span></label></div>
+                        <div class="select-field typemb"><select class="select">
+                                <option class="placeholder" value="placeholder" disabled selected>Тип объекта</option>
+                                <option value="KV">Квартира</option>
+                                <option value="PH">Пентхаус</option>
+                                <option value="TH">Таунхаус</option>
+                            </select></div>
+                        <div class="select-field sleep"><select class="select">
+                                <option class="placeholder" value="placeholder" disabled selected>Спален от</option>
+                                <option value="KV">Квартира</option>
+                                <option value="PH">Пентхаус</option>
+                                <option value="TH">Таунхаус</option>
+                            </select></div>
+                        <div class="select-field squares"><select class="select">
+                                <option class="placeholder" value="placeholder" disabled selected>Площадь от</option>
+                                <option value="KV">Квартира</option>
+                                <option value="PH">Пентхаус</option>
+                                <option value="TH">Таунхаус</option>
+                            </select></div>
+                        <div class="select-field price"><select class="select">
+                                <option class="placeholder" value="placeholder" disabled selected>Цена до</option>
+                                <option value="KV">Квартира</option>
+                                <option value="PH">Пентхаус</option>
+                                <option value="TH">Таунхаус</option>
+                            </select></div>
+                        <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Терраса</span></label></div>
+                        <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Ремонт</span></label></div>
+                    </div>
+                    <div class="filter-area">
+                        <p class="filter-area-title">Округа и районы</p>
+                        <div class="filter-area-areas">
+                            <div class="filter-area-center">
+                                <div class="checkbox-field bold"><label class="checkbox"><input type="checkbox"><span>ЦАО <p>(центр)</p></span></label></div>
+                                <div class="checkboxs">
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Замоскворечье</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Басманный</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Красносельский</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Хамовники</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Якиманка</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Мещанский</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Пресненский</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Таганский</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Тверской</span></label></div>
+                                    <div class="checkbox-field"><label class="checkbox"><input type="checkbox"><span>Арбат</span></label></div>
+                                </div>
+                            </div>
+                            <div class="filter-area-other">
+                                <div class="checkbox-field bold"><label class="checkbox"><input type="checkbox"><span>ЗАО <p>(запад)</p></span></label></div>
+                                <div class="checkbox-field bold"><label class="checkbox"><input type="checkbox"><span>САО <p>(север)</p></span></label></div>
+                                <div class="checkbox-field bold"><label class="checkbox"><input type="checkbox"><span>ВАО <p>(восток)</p></span></label></div>
+                                <div class="checkbox-field bold"><label class="checkbox"><input type="checkbox"><span>ЮАО <p>(юг)</p></span></label></div>
+                                <div class="checkbox-field bold"><label class="checkbox"><input type="checkbox"><span>СЗАО <p>(северо-запад)</p></span></label></div>
+                                <div class="checkbox-field bold"><label class="checkbox"><input type="checkbox"><span>ЮЗАО <p>(юго-запад)</p></span></label></div>
+                                <div class="checkbox-field bold"><label class="checkbox"><input type="checkbox"><span>СВАО <p>(северо-восток)</p></span></label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-control">
+                    <div class="filter-control-controls">
+                        <div class="filter-control-toggler">Округ/район<span class="icon"></span></div>
+                        <div class="filter-control-reset">Сбросить<span class="icon"></span></div>
+                    </div>
+                    <div class="filter-control-btns"><a class="filter-control-btn filter-control-btn__outline" href="#"> <span class="icon"></span>На карте</a><button class="filter-control-btn filter-control-btn__filled"> Показать<span class="amount">215</span></button></div>
+                </div>
+            </div>
+            <div class="filterTeasers">
+                <div class="filterTeasers-head">
+                    <div class="filterTeasers-amount">Найдено <span>215 </span>объектов</div>
+                    <div class="filterTeasers-filters">
+                        <div class="filterTeasers-item">По цене</div>
+                        <div class="filterTeasers-item active">По площади</div>
+                    </div>
+                </div>
+                <div class="filterTeasers-teasers">
+                    <div class="teaser teaser__big teaser__desc">
+                        <div class="teaser-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="teaser-overlay">
+                                <p class="teaser-overlay-tag"> <span class="teaser-overlay-icon"></span>топ-10</p>
+                            </div>
+                        </div>
+                        <div class="teaser-wrapper">
+                            <div class="teaser-content">
+                                <div class="teaser-content-main"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+                                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+                                    <div class="teaser-tags">
+                                        <p class="teaser-tag">Многоуровневая квартира</p>
+                                    </div>
+                                </div>
+                                <div class="teaser-price">
+                                    <div class="teaser-rub">514 560 000 ₽</div>
+                                    <div class="teaser-dol">7 000 000 $</div>
+                                </div>
+                            </div>
+                            <div class="teaser-desc">
+                                <p class="teaser-desc-text">К продаже предлагается 2-х уровневый апартамент. 2 спальни, просторная кухня- гостиная, 3 с/у. Собственная терраса. Окна выходят в яркий и уютный двор комплекса. Art residence - это новый малоэтажный комплекс особняков премиум класса в центре Москвы. Комплекс обладает очень богатой внутренней инфраструктурой. Европейская архитектура комплекса создает атмосферу успеха и условия для качественной жизни в ритме мегаполиса. В комплек...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teaser teaser__big teaser__desc">
+                        <div class="teaser-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="./img/teaser1.webp" type="image/webp"><img src="./img/teaser1.png" alt="1">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="teaser-overlay">
+                                <p class="teaser-overlay-tag"> <span class="teaser-overlay-icon"></span>топ-10</p>
+                            </div>
+                        </div>
+                        <div class="teaser-wrapper">
+                            <div class="teaser-content">
+                                <div class="teaser-content-main"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+                                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+                                    <div class="teaser-tags">
+                                        <p class="teaser-tag">Многоуровневая квартира</p>
+                                    </div>
+                                </div>
+                                <div class="teaser-price">
+                                    <div class="teaser-rub">514 560 000 ₽</div>
+                                    <div class="teaser-dol">7 000 000 $</div>
+                                </div>
+                            </div>
+                            <div class="teaser-desc">
+                                <p class="teaser-desc-text">К продаже предлагается 2-х уровневый апартамент. 2 спальни, просторная кухня- гостиная, 3 с/у. Собственная терраса. Окна выходят в яркий и уютный двор комплекса. Art residence - это новый малоэтажный комплекс особняков премиум класса в центре Москвы. Комплекс обладает очень богатой внутренней инфраструктурой. Европейская архитектура комплекса создает атмосферу успеха и условия для качественной жизни в ритме мегаполиса. В комплек...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teaser teaser__big teaser__desc">
+                        <div class="teaser-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="./img/teaser1.webp" type="image/webp"><img src="./img/teaser1.png" alt="1">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="teaser-overlay">
+                                <p class="teaser-overlay-tag"> <span class="teaser-overlay-icon"></span>топ-10</p>
+                            </div>
+                        </div>
+                        <div class="teaser-wrapper">
+                            <div class="teaser-content">
+                                <div class="teaser-content-main"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+                                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+                                    <div class="teaser-tags">
+                                        <p class="teaser-tag">Многоуровневая квартира</p>
+                                    </div>
+                                </div>
+                                <div class="teaser-price">
+                                    <div class="teaser-rub">514 560 000 ₽</div>
+                                    <div class="teaser-dol">7 000 000 $</div>
+                                </div>
+                            </div>
+                            <div class="teaser-desc">
+                                <p class="teaser-desc-text">К продаже предлагается 2-х уровневый апартамент. 2 спальни, просторная кухня- гостиная, 3 с/у. Собственная терраса. Окна выходят в яркий и уютный двор комплекса. Art residence - это новый малоэтажный комплекс особняков премиум класса в центре Москвы. Комплекс обладает очень богатой внутренней инфраструктурой. Европейская архитектура комплекса создает атмосферу успеха и условия для качественной жизни в ритме мегаполиса. В комплек...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teaser teaser__big teaser__desc">
+                        <div class="teaser-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="./img/teaser1.webp" type="image/webp"><img src="./img/teaser1.png" alt="1">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="teaser-overlay">
+                                <p class="teaser-overlay-tag"> <span class="teaser-overlay-icon"></span>топ-10</p>
+                            </div>
+                        </div>
+                        <div class="teaser-wrapper">
+                            <div class="teaser-content">
+                                <div class="teaser-content-main"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+                                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+                                    <div class="teaser-tags">
+                                        <p class="teaser-tag">Многоуровневая квартира</p>
+                                    </div>
+                                </div>
+                                <div class="teaser-price">
+                                    <div class="teaser-rub">514 560 000 ₽</div>
+                                    <div class="teaser-dol">7 000 000 $</div>
+                                </div>
+                            </div>
+                            <div class="teaser-desc">
+                                <p class="teaser-desc-text">К продаже предлагается 2-х уровневый апартамент. 2 спальни, просторная кухня- гостиная, 3 с/у. Собственная терраса. Окна выходят в яркий и уютный двор комплекса. Art residence - это новый малоэтажный комплекс особняков премиум класса в центре Москвы. Комплекс обладает очень богатой внутренней инфраструктурой. Европейская архитектура комплекса создает атмосферу успеха и условия для качественной жизни в ритме мегаполиса. В комплек...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teaser teaser__big teaser__desc">
+                        <div class="teaser-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="./img/teaser1.webp" type="image/webp"><img src="./img/teaser1.png" alt="1">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                                <div class="swiper-slide"><img src="./img/teaser1.png" alt="1"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="teaser-overlay">
+                                <p class="teaser-overlay-tag"> <span class="teaser-overlay-icon"></span>топ-10</p>
+                            </div>
+                        </div>
+                        <div class="teaser-wrapper">
+                            <div class="teaser-content">
+                                <div class="teaser-content-main"><a class="teaser-title" href="#">5 комнат, 458.6 м2, 7 этаж </a><a class="teaser-jk" href="#">ЖК «Садовые кварталы»</a>
+                                    <p class="teaser-address">СВАО, Ростокино, проспект Мира, 188Бк1</p>
+                                    <div class="teaser-tags">
+                                        <p class="teaser-tag">Многоуровневая квартира</p>
+                                    </div>
+                                </div>
+                                <div class="teaser-price">
+                                    <div class="teaser-rub">514 560 000 ₽</div>
+                                    <div class="teaser-dol">7 000 000 $</div>
+                                </div>
+                            </div>
+                            <div class="teaser-desc">
+                                <p class="teaser-desc-text">К продаже предлагается 2-х уровневый апартамент. 2 спальни, просторная кухня- гостиная, 3 с/у. Собственная терраса. Окна выходят в яркий и уютный двор комплекса. Art residence - это новый малоэтажный комплекс особняков премиум класса в центре Москвы. Комплекс обладает очень богатой внутренней инфраструктурой. Европейская архитектура комплекса создает атмосферу успеха и условия для качественной жизни в ритме мегаполиса. В комплек...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterTeasers-control"><button class="filterTeasers-btn"> Показать ещё<span class="icon"></span></button>
+                    <div class="filterTeasers-pagination">
+                        <div class="filterTeasers-pagination-left disabled"><span class="icon"></span></div>
+                        <div class="filterTeasers-pagination-item active">1</div>
+                        <div class="filterTeasers-pagination-item">2</div>
+                        <div class="filterTeasers-pagination-item">3</div>
+                        <div class="filterTeasers-pagination-item">4</div>
+                        <div class="filterTeasers-pagination-right"> <span class="icon"></span></div>
+                    </div>
+                    <div class="filterTeasers-number"> Показывать по 72<span class="icon"> </span></div>
+                </div>
+            </div>
+        </div>
+        <div class="listing-compilation">
+            <div class="wrapper">
+                <h2 class="listing-compilation-title">Подборки пентхаусов</h2>
+                <p class="listing-compilation-desc">Выберите диапазон стоимости пентхауса, площадь или ЖК.</p>
+                <p class="listing-compilation-desc">Или воспользуйесь <span>расширенной формой поиска</span>.</p>
+                <div class="listing-compilation-list">
+                    <div class="listing-compilation-item">
+                        <div class="listing-compilation-header"> Ценовая категория, ₽<span class="icon"></span></div>
+                        <div class="listing-compilation-body">
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Самые дешёвые</div><a class="listing-compilation-amount" href="#">0</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">30—60 млн.</div><a class="listing-compilation-amount" href="#">37</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">60—100 млн.</div><a class="listing-compilation-amount" href="#">82</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">100—150 млн.</div><a class="listing-compilation-amount" href="#">98</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">150—200 млн.</div><a class="listing-compilation-amount" href="#">86</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">200—300 млн.</div><a class="listing-compilation-amount" href="#">108</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">300—500 млн.</div><a class="listing-compilation-amount" href="#">96</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">свыше 500 млн.</div><a class="listing-compilation-amount" href="#">113</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-compilation-item">
+                        <div class="listing-compilation-header"> Площадь<span class="icon"></span></div>
+                        <div class="listing-compilation-body">
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Самые маленькие</div><a class="listing-compilation-amount" href="#">0</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">100—150 кв. м</div><a class="listing-compilation-amount" href="#">98</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">150—200 кв. м</div><a class="listing-compilation-amount" href="#">86</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">200—300 кв. м</div><a class="listing-compilation-amount" href="#">108</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">300—400 кв. м</div><a class="listing-compilation-amount" href="#">96</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">400—500 кв. м</div><a class="listing-compilation-amount" href="#">96</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">свыше 500 кв. м</div><a class="listing-compilation-amount" href="#">113</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-compilation-item">
+                        <div class="listing-compilation-header"> Популярные районы<span class="icon"></span></div>
+                        <div class="listing-compilation-body">
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Хамовники</div><a class="listing-compilation-amount" href="#">0</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Пресненский</div><a class="listing-compilation-amount" href="#">98</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Замоскворечье</div><a class="listing-compilation-amount" href="#">86</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Тверской</div><a class="listing-compilation-amount" href="#">108</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Якиманка</div><a class="listing-compilation-amount" href="#">96</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Раменки</div><a class="listing-compilation-amount" href="#">96</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Беговой</div><a class="listing-compilation-amount" href="#">113</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-compilation-item">
+                        <div class="listing-compilation-header"> Популярные ЖК<span class="icon"></span></div>
+                        <div class="listing-compilation-body">
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Knightsbridge Park</div><a class="listing-compilation-amount" href="#">0</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">RedSide</div><a class="listing-compilation-amount" href="#">98</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Башня Федерация</div><a class="listing-compilation-amount" href="#">86</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Ordynka</div><a class="listing-compilation-amount" href="#">108</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Art Residence</div><a class="listing-compilation-amount" href="#">96</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Остров фантазий</div><a class="listing-compilation-amount" href="#">96</a>
+                            </div>
+                            <div class="listing-compilation-row">
+                                <div class="listing-compilation-text">Вишневый Сад</div><a class="listing-compilation-amount" href="#">113</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-overlay"></div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.selectric.min.js"> </script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"> </script>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-wrapper">
+                <div class="footer-contact">
+                    <div class="footer-contact-logo">
+                        <picture>
+                            <source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="Пентхаусы Москвы">
+                        </picture>
+                    </div>
+                    <div class="footer-contact-links"><a class="footer-contact-link footer-contact-phone" href="tel:+749515032ХХ">+7 495 150-32-ХХ</a><a class="footer-contact-link footer-contact-mail" href="mailto:info@mospenthouse.ru">info@mospenthouse.ru</a></div>
+                    <div class="footer-contact-text">Ответим на любые вопросы, связанные с куплей-продажей пентхаусов и квартир с открытыми террасами в Москве. Информация на сайте, в т.ч. стоимость пентхаусов, носит информационный характер и не является публичной офертой.</div>
+                </div>
+                <div class="footer-menu"><a class="footer-menu-link" href="./">На главную</a><a class="footer-menu-link" href="./catalog.html">Каталог</a><a class="footer-menu-link" href="#">Наши услуги</a><a class="footer-menu-link" href="#">Продать пентхаус</a><a class="footer-menu-link" href="#">Статьи</a><a class="footer-menu-link" href="#">Контакты</a></div>
+                <div class="footer-services"><a class="footer-service" href="#">
+                        <p class="footer-service-title">Продажа пентхауса</p>
+                        <p class="footer-service-text">Предлагаем 3 схемы сотрудничества для собственников<span>: стандартная, с рекламным продвижением и эксклюзивная с работой с агентствами</span></p>
+                    </a><a class="footer-service" href="#">
+                        <p class="footer-service-title">Поиск элитной недвижимости</p>
+                        <p class="footer-service-text">Комиссия для покупателей — 0%! <span>Персональный подход к реализации задач клиента, опыт проведения сложных сделок и соблюдение конфиденциальности.</span></p>
+                    </a><a class="footer-service" href="#">
+                        <p class="footer-service-title">Правовое сопровождение сделок</p>
+                        <p class="footer-service-text">Проверим историю объекта недвижимости и юридическую чистоту сделки<span>, поможем составить договор купли-продажи и поможем снизить налогообложение при продаже</span></p>
+                    </a></div>
+                <div class="footer-news"><a class="footer-new" href="#">
+                        <div class="footer-new-img"><img src="./img/new1.png" alt="1"></div>
+                        <p class="footer-new-title">«Резиденция Тверская» — роскошные пентхаусы в центре старой Москвы</p>
+                    </a><a class="footer-new" href="#">
+                        <div class="footer-new-img"><img src="./img/new2.png" alt="2"></div>
+                        <p class="footer-new-title">Самые дорогие пентхаусы столицы</p>
+                    </a><a class="footer-new" href="#">
+                        <div class="footer-new-img"><img src="./img/new3.png" alt="3"></div>
+                        <p class="footer-new-title">В Нью-Йорке продается единственный пентхаус от Захи Хадид</p>
+                    </a><a class="footer-new" href="#">
+                        <div class="footer-new-img"><img src="./img/new4.png" alt="4"></div>
+                        <p class="footer-new-title">Невероятный пентхаус «День-и-ночь» в Лондоне</p>
+                    </a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <div class="footer-company">
+                        <div class="footer-company-name">ООО "Интернет недвижимость" </div>
+                        <div class="footer-company-address">127287, г. Москва, улица Башиловская, дом 28, стр. 9, пом. 1, ком. 15</div>
+                        <div class="footer-company-legal">ИНН 7714384732 / КПП 771401001 / ОГРН 1167746384310</div>
+                    </div>
+                    <div class="footer-socials"><a class="footer-social" href="#" target="_blank"> <span class="footer-social-icon footer-social-icon__youtube"></span><span class="footer-social-title">Youtube</span></a><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__facebook"></span><span class="footer-social-title">Facebook</span></a><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__instagram"></span><span class="footer-social-title">Instargam</span></a><a class="footer-social" href="#" target="_blank"><span class="footer-social-icon footer-social-icon__twitter"></span><span class="footer-social-title">Twitter</span></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
