@@ -370,12 +370,20 @@ body {
 .main-left-inputs .select-field {
   flex-grow: 1;
 }
+.main-left-inputs .select-field .selectric-wrapper {
+  width: 100%;
+}
+.main-left-inputs .main-left-btn {
+  flex-grow: 1;
+}
 
 .main-left-field.whatsapp {
   max-width: 40%;
 }
 .main-left-field.wish {
   max-width: 70%;
+  width: 100%;
+  margin-right: 32px;
 }
 
 .main-left-btn {
