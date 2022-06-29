@@ -3334,8 +3334,18 @@ body .header.fixed {
   color: #FFFFFF;
   position: absolute;
   left: 24px;
-  bottom: 24px;
+  bottom: 48px;
   padding-left: 24px;
+}
+.top10-subaddress {
+  font-size: 18px;
+  line-height: 24px;
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+}
+.top10-subaddress span {
+  margin-left: 32px;
 }
 
 .top10-address::after {
