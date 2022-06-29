@@ -3343,6 +3343,7 @@ body .header.fixed {
   position: absolute;
   left: 24px;
   bottom: 24px;
+  padding-left: 24px;
 }
 .top10-subaddress span {
   margin-left: 32px;
