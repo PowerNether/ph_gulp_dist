@@ -367,6 +367,10 @@ body {
   border-radius: 0 8px 8px 0;
 }
 
+.main-left-inputs .select-field {
+  flex-grow: 1;
+}
+
 .main-left-field.whatsapp {
   max-width: 40%;
 }
