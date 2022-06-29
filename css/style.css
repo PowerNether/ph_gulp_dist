@@ -3832,6 +3832,7 @@ body .header.fixed {
   -webkit-transition: background .35s;
   -o-transition: background .35s;
   transition: background .35s;
+  display: none;
 }
 
 .teaser__desc .teaser-desc-btn:hover {
