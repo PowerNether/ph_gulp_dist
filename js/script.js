@@ -6,7 +6,7 @@ window.onscroll = function () {
     const body = document.querySelector('body')
     if (body.classList.contains('front')) {
         const main_info = document.querySelector('.main').getBoundingClientRect()
-        if (window.pageYOffset >= (main_info.x + main_info.height)) {
+        if (window.pageYOffset >= main_info.height) {
             menu.classList.add('fixed')
         } else {
             menu.classList.remove('fixed')

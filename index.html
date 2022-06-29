@@ -20,30 +20,47 @@
                 </picture>
             </div>
             <h1 class="main-left-title">Поможем найти квартиру с террасой в Москве</h1>
+            <p class="main-left-titlesub"> Специалист уточнит запрос детальнее, <span>без комиссии </span>подберёт и отправит презентации на WhatsApp. Без спама</p>
             <p class="main-left-text"> Специалист уточнит запрос детальнее, <span>без комиссии </span>подберёт и отправит презентации на WhatsApp. Без спама</p>
             <form class="main-left-form">
                 <div class="main-left-inputs">
-                    <div class="select-field type"><span class="amount">1</span><select class="select" multiple="multiple">
+                    <div class="select-field type">
+                        <span class="amount">1</span>
+                        <select class="select" multiple="multiple">
                             <option class="placeholder" value="placeholder" disabled>Тип объекта</option>
                             <option value="KV">Квартира</option>
                             <option value="PH">Пентхаус</option>
                             <option value="TH">Таунхаус</option>
-                        </select></div>
-                    <div class="main-left-field whatsapp">
-                        <div class="main-left-input"><input id="whatsapp" name="whatsapp" type="tel" placeholder="Номер WhatsApp" required><label for="whatsapp">Номер WhatsApp</label></div>
+                        </select>
                     </div>
-                    <div class="select-field price"><select class="select">
+                    <div class="main-left-field whatsapp">
+                        <div class="main-left-input">
+                            <input id="whatsapp" name="whatsapp" type="tel" placeholder="Номер WhatsApp" required>
+                            <label for="whatsapp">Номер WhatsApp</label>
+                        </div>
+                    </div>
+                    <div class="select-field price">
+                        <select class="select">
                             <option class="placeholder" value="placeholder" disabled selected>Цена от</option>
                             <option value="KV">Квартира</option>
                             <option value="PH">Пентхаус</option>
                             <option value="TH">Таунхаус</option>
-                        </select><select class="select">
+                        </select>
+                        <select class="select">
                             <option class="placeholder" value="placeholder" disabled selected>Цена до</option>
                             <option value="KV">Квартира</option>
                             <option value="PH">Пентхаус</option>
                             <option value="TH">Таунхаус</option>
-                        </select></div>
-                </div><button class="main-left-btn">Подобрать варианты</button>
+                        </select>
+                    </div>
+                </div>
+                <div class="main-left-field whatsapp">
+                    <div class="main-left-input">
+                        <input id="wish" name="wish" type="text" placeholder="Пожелания" required>
+                        <label for="wish">Пожелания</label>
+                    </div>
+                </div>
+                <button class="main-left-btn">Найти</button>
             </form>
         </div>
         <div class="main-right"><a class="main-right-block main-right-block__slider swiper" href="">
@@ -57,14 +74,14 @@
                 </div>
                 <div class="main-right-overlay">
                     <p class="main-right-title">Выбрать пентхаус самостоятельно</p>
-                    <p class="main-right-link">577 варинатов на карте</p>
+                    <p class="main-right-link">577 варинатов</p>
                     <div class="swiper-pagination main-right-pagination"></div>
                 </div>
             </a><a class="main-right-block main-right-block__image" href="">
                 <p class="main-right-title">Топ-10 самых актуальных предложений</p>
             </a><a class="main-right-block main-right-block__color" href="">
-                <p class="main-right-title">Выбрать пентхаус самостоятельно</p>
-                <p class="main-right-link">577 варинатов на карте</p>
+                <p class="main-right-title">Карта пентхаусов</p>
+                <p class="main-right-link">577 варианатов на карте</p>
             </a></div>
     </div>
     <div class="intro">
@@ -100,14 +117,22 @@
     <div class="top10">
         <div class="wrapper">
             <h2 class="top10-title">Топ-10 лучших видов</h2>
-            <p class="top10-text">Сотрудничество с ведущими мировыми и российскими архитектурными бюро позволяет выделить проекты холдинга на карте города.</p>
+            <p class="top10-text">
+                Специалисты портала "Пентхаусы Москвы" собрали уникальную коллекцию квартир и пентхаусов с реальными видами, которые вы можете купить прямо сегодня.
+            </p>
             <div class="top10-slider swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="top10-img"><img src="./img/top10_1.png" alt="1">
                             <div class="top10-overlay">
                                 <p class="top10-address">Квартал «Зорге №9», пентхаус 1850 м2</p>
-                                <div class="top10-gallery"><span class="top10-gallery-icon"></span></div>
+                                <p class="top10-subaddress">
+                                    12 этаж
+                                    <span>123 000 000 руб</span>
+                                </p>
+                                <div class="top10-gallery">
+                                    <span class="top10-gallery-icon"></span>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -192,6 +192,13 @@ body {
   color: #101010;
   margin-bottom: 16px;
 }
+.main-left-titlesub {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #101010;
+  margin-bottom: 16px;
+}
 
 .main-left-text {
   font-size: 18px;
@@ -3266,6 +3273,8 @@ body .header.fixed {
   color: #555555;
   max-width: 592px;
   margin-bottom: 32px;
+  padding-left: 16px;
+  border-left: 1px solid #00D26D;
 }
 
 .top10-slider {
