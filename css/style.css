@@ -3107,6 +3107,17 @@ body .header.fixed {
 
 .catalog-address {
   font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  position: absolute;
+  left: 24px;
+  bottom: 48px;
+  padding-left: 24px;
+}
+
+.catalog-subaddress {
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   position: absolute;
